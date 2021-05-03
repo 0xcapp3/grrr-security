@@ -4,6 +4,8 @@ set -e
 set -u
 set -x
 
+echo "[+] Testing RAP"
+
 export PATH="$LLVM_DIR/bin:$PATH"
 
 clang -O1 -emit-llvm -c inputs/input1.c -o inputs/input1.bc
